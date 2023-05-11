@@ -147,10 +147,11 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
-        String[] sp = to_split.split("");
-        for (String s : sp){
-            ret.append(s.charAt(0));
-        }
+        String[] x = to_split.split(" ");
+        for (int i = 0; i < x.length; i++){
+            ret.append(x[i].charAt(0));
+
+    }
 
 
         return ret.toString();
